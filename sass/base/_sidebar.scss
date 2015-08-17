@@ -1,0 +1,20 @@
+.side-bar{
+
+	.menu{
+
+
+		ul{
+			box-sizing:border-box;
+			margin-top: 80px;
+			padding-left: 0;
+		}
+
+
+		li{
+			list-style-type: none;
+			padding: 10px 50px;
+			// border-bottom: 1px solid $light-gray;
+			box-shadow:1px -3px 7px transparentize($gray,0.9);
+		}
+	}
+}

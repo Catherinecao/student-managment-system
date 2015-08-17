@@ -1,0 +1,15 @@
+.navbar-fixed-bottom{
+	background-color:$background-color-footer;
+	box-shadow:$dropshadow-footer;
+	border-top:$border-top-footer;
+
+	ul{
+		display: inline-block;
+		margin:20px 0;
+		li{
+			list-style-type: none;
+			color:black;
+			display: inline;
+		}
+	}
+}
