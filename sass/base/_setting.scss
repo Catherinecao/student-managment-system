@@ -1,7 +1,8 @@
 
 
 .container-fluid{
-	padding:0;	
+	padding:0;
+	background-color:$orange;	
 }
 
 .btn{
@@ -23,14 +24,25 @@
 
 .col-md-9{
 	color:$white;
-	background-color:$orange;
+	// background-color:$orange;
 	text-align:center;
-	height:100vh;
+	// height:100vh;
 }
 
 .col-md-3{
-	background-color:$background-gray;
+	background-color:$light-gray;
 	box-shadow:-3px 5px 3px transparentize(black,0.9);
 	padding:0;
 	height:100vh;
+}
+
+hr{
+
+	color:transparentize(black, 0.5);
+	box-shadow: 1px 1px 3px transparentize(black,0.9);
+	margin:50px 0;
+}
+
+.control-label{
+	float:left;
 }
