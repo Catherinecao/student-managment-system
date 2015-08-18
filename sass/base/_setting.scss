@@ -1,9 +1,12 @@
-
+.container{
+	padding:0 30px;
+}
 
 .container-fluid{
 	padding:0;
 	background-color:$orange;	
 }
+
 
 .btn{
 	border-radius:0;
@@ -19,6 +22,15 @@
 .btn-search{
 	background-color:$orange;
 	color:$white;
+	margin-right:0;
+	@media (min-width: 992px){
+		margin-right:20px;
+	}
+}
+
+.btn-submit{
+	background-color:$orange;
+	color:$white;
 	margin-right:20px;
 }
 
@@ -26,6 +38,7 @@
 	color:$white;
 	// background-color:$orange;
 	text-align:center;
+	position:relative;
 	// height:100vh;
 }
 
@@ -33,16 +46,93 @@
 	background-color:$light-gray;
 	box-shadow:-3px 5px 3px transparentize(black,0.9);
 	padding:0;
-	height:100vh;
+	// height:100vh;
+	@media (min-width: 992px){
+		height:100vh;
+	}
 }
 
 hr{
-
-	color:transparentize(black, 0.5);
+	// padding:0 percentage(20/1280);
+	border-color:transparentize($darker-orange, 0.8);
 	box-shadow: 1px 1px 3px transparentize(black,0.9);
-	margin:50px 0;
+	margin:50px percentage(60/1280);
+
 }
 
 .control-label{
 	float: left;
+}
+.col-12{
+	width:100%;
+	float: left;
+	vertical-align:middle;
+	margin-bottom:20px;
+	display:inline-block;
+	text-align: left;
+	padding-right:20px;
+
+	.control-label{
+		padding:5px;
+		width: percentage(3/20);
+		vertical-align:middle;
+	}
+
+	.form-control{
+		width: percentage(7/20);
+		float: right;
+		vertical-align:middle;
+		text-align: left;
+	}
+
+	.btn{
+		margin-top: 30px;
+	}
+}
+
+.col-6{
+	width:50%;
+	float: left;
+	vertical-align:middle;
+	margin-bottom:20px;
+	display:inline-block;
+	text-align: left;
+	height:50px;
+
+	.btn{
+		margin-top: 30px;
+	}
+
+	.control-label{
+		padding:5px;
+		width: 30%;
+		vertical-align:middle;
+	}
+	.form-control,
+	.checkbox-container
+	{
+		width: 70%;
+		float: right;
+		vertical-align:middle;
+		text-align: left;
+
+		.form-control-others{
+			position: relative;
+			display: inline-block;
+			margin-left: 20px;
+
+			// width:40%;
+		}
+	}
+}
+
+.col-md-1{
+	width:12.15%;
+	margin-top:3px;
+	margin-right:2px;
+	height:7px;
+	background-color:transparentize(black,0.9);
+	border-radius:1px;
+	box-shadow:1px 1px 1px transparentize(black,0.9) inset;
+
 }

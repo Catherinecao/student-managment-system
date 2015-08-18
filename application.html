@@ -10,7 +10,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-   <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/jquery.waypoints.min.js"></script>
+  <script src="js/vendor/sticky.min.js"></script>
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
   <script src="js/main.js"></script>
 </head>
   <body>
@@ -44,31 +47,31 @@
     </nav><!--/.navbar -->
 
     <main class="container-fluid">
-      <div class="content col-md-9">
+      <div class="content col-md-9 ">
         
+          <div class="row process-bar">
+            <a class="col-md-1 step actived" href="#step-1"></a>
+            <a class="col-md-1 step" href="#step-2"></a>
+            <a class="col-md-1 step" href="#step-3"></a>
+            <a class="col-md-1 step" href="#step-4"></a>
+            <a class="col-md-1 step" href="#step-5"></a>
+            <a class="col-md-1 step" href="#step-6"></a>
+            <a class="col-md-1 step" href="#step-7"></a>
+            <a class="col-md-1 step" href="#step-8"></a>
+          </div><!-- /.process-bar -->
 
         <!-- scroll-container -->
         <div class="scroll-container">
-          <div class="row">
-            <div class="col-md-1 actived"></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-1"></div>
-            <div class="col-md-1"></div>
-          </div><!-- /.process-bar -->
 
           <!-- scroll-content -->
-          <div class="scroll-content">
+          <div class="scroll-content" id="step-1">
             <div class="application">
               <h1>Application Form for International Student</h1>
               <p>Welcome to the Kingston Institute of Business & Technology (KIBT). Please read the instructions below carefully before you complete this application form.</p>
             </div>
 
             <div class="instructions">
-              <h2>INSTRUCTIONS</h2>
+              <h3>INSTRUCTIONS</h3>
               <p>The purpose of this application is to get from you the information we need to offer you a place and to enrol you onto a course at KIBT. We also need to collect information which is required by the Ministry of Education and other Government agencies for statistical reasons.
 
               Prior to completing this form, all students must first read the KIBT Student Handbook in full. This is available on request from KIBT or can be viewed at www.kingston.ac.nz. Prospective students must also review the Code of Practice for the Pastoral care of International Students published by the New Zealand Qualification Authority (NZQA).
@@ -98,44 +101,135 @@
             </div><!-- /. instructions-->
           </div><!-- /. scroll-content-->
 
-          <div class="scroll-content">
-            <h2>PERSONAL DETAILS</h2>
-            <div class="col-md-12">
-             <label class="control-label">Title</label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1"> Mr
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox2" value="option2"> Mrs
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox3" value="option3"> Ms
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox4" value="option4"> Miss
-            </label>
-            <label class="checkbox-inline">
-              <input type="text" class="form-control" placeholder="Others">
-            </label>
-            </div>
+          <div class="scroll-content clearfix" id="step-2">
+            <h3>PERSONAL DETAILS</h3>
+            <div class="form-container clearfix">
+              <div class="col-12">
+               <label class="control-label">Title</label>
+               <div class="checkbox-container">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Mr
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Mrs
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> Ms
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox4" value="option4"> Miss
+                  </label>
+                  <input type="text" class="form-control others" placeholder="Others">
+                </div>
+              </div>
 
-             <div class="col-md-6">
-              <label class="control-label">First name</label>
-              <input class="form-control" type="text" id="formGroupInput" placeholder="First name">
-             </div>
+               <div class="col-6">
+                <label class="control-label">First name</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="First name">
+              </div>
 
-             <div class="col-md-6">
-              <label class="control-label">Last name</label>
-              <input class="form-control" type="text" id="formGroupInput" placeholder="Last name">
-             </div> 
+               <div class="col-6">
+                <label class="control-label">Last name</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Last name">
+              </div> 
 
-              <div class="col-md-6">
-              <label class="control-label">Preferred name</label>
-              <input class="form-control" type="text" id="formGroupInput" placeholder="Preferred name">
-             </div> 
+              <div class="col-6">
+                <label class="control-label">Preferred name</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Preferred name">
+              </div>
 
+              <div class="col-6">
+                <label class="control-label">Date of Birth</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Date of Birth">
+              </div>
+
+               <div class="col-12">
+               <label class="control-label">Gender</label>
+               <div class="checkbox-container">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Male
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Female
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Country of Citizenship</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Country of Citizenship">
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Ethnicity</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Ethnicity">
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Passport No</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Passport No">
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Passport Expiry Date</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Passport Expiry Date">
+              </div>
+
+              <div class="col-12">
+               <label class="control-label">Current Visa Type</label>
+               <div class="checkbox-container">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Student Visa
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Visitor Visa
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> Work Visa
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox4" value="option4"> Working Holiday Visa
+                  </label>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Visa Expiry Date</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Visa Expiry Date">
+              </div>
+
+              <div class="col-12">
+                <label for="InputFile">Submit a softcopy of Passport</label>
+                <input type="file" id="exampleInputFile">
+                <button class="btn btn-submit">Submit</button>
+              </div>
+
+            </div><!-- /.form-container -->
           </div><!-- /.PERSONAL DETAILS -->
+          
+          <div class="scroll-content clearfix" id="step-3">
+            <h3>CONTACT DETAILS</h3>
+          </div><!-- /.CONTACT DETAILS -->
 
+          <div class="scroll-content clearfix" id="step-4">
+            <h3>PROGRAMME INFORMATION</h3>
+          </div><!-- /.PROGRAMME INFORMATION -->
+        
+          <div class="scroll-content clearfix" id="step-5">
+            <h3>PROGRAMME INFORMATION</h3>
+          </div><!-- /.PROGRAMME INFORMATION -->
+          
+          <div class="scroll-content clearfix" id="step-6">
+            <h3>ADDITIONAL SERVICES</h3>
+          </div><!-- /.Additional Services -->
+          
+          <div class="scroll-content clearfix" id="step-6">
+            <h3>AGENT INFORMATION</h3>
+          </div><!-- /.AGENT INFORMATION -->
+          
+          <div class="scroll-content clearfix" id="step-6">
+            <h3>DECLARATION & SIGNATURE</h3>
+          </div><!-- /.DECLARATION & SIGNATURE -->
 
         </div><!-- /.scroll-container -->
       </div><!--/.content -->

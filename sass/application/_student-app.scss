@@ -1,9 +1,22 @@
 .scroll-container{
+	padding:0 30px;
+}
+.process-bar{
 	padding:50px 30px 0;
+	overflow: hidden;
+	z-index: 102;
+	position:fixed;
+	width:percentage(9/12);
+	@media (min-width: 768px){
+		width: 100%;
+		padding:0;
+	}
 }
 
 .scroll-content{
-	margin-top:50px;
+	//position:relative;
+	display:block;
+	margin-top:130px;
 	margin-bottom:50px;
 	padding:30px 50px 50px;
 	background-color:$white;
@@ -30,18 +43,15 @@
 	margin-bottom:30px;
 }
 
-.col-md-1{
-	width:12.15%;
-	margin-top:3px;
-	margin-right:2px;
-	height:7px;
-	background-color:transparentize(black,0.9);
-	border-radius:1px;
-	box-shadow:1px 1px 1px transparentize(black,0.9) inset;
 
-}
 
 .actived{
 	background-color:$light-orange;
 	box-shadow:1px 2px 1px transparentize(black,0.9);
+}
+
+
+
+.form-container{
+	margin-top:50px;
 }
