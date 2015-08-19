@@ -6,7 +6,7 @@
 .navbar-form{
 	padding: 10px 15px;
 	@media (min-width: 768px){
-		padding: 10px 0;
+		padding: 10px percentage(15/750);
 		margin: 0;
 	}
 }
@@ -20,3 +20,4 @@
 .navbar-inverse .navbar-toggle {
 	background-color:$orange;
 }
+

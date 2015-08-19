@@ -1,5 +1,13 @@
 .container{
-	padding:0 30px;
+	padding:0 percentage(20/320);
+	@media (min-width:768px){
+		padding:0 percentage(20/750);
+	}
+
+	@media (min-width:992px){
+		padding:0 percentage(30/970);
+	}
+
 }
 
 .container-fluid{
@@ -88,10 +96,12 @@ hr{
 	.btn{
 		margin-top: 30px;
 	}
+
+
 }
 
 .col-6{
-	width:50%;
+	width:100%;
 	float: left;
 	vertical-align:middle;
 	margin-bottom:20px;
@@ -124,10 +134,14 @@ hr{
 			// width:40%;
 		}
 	}
+
+	@media (min-width:768px){
+		width: 50%;
+	}
 }
 
 .col-md-1{
-	width:12.15%;
+	
 	margin-top:3px;
 	margin-right:2px;
 	height:7px;
@@ -135,4 +149,19 @@ hr{
 	border-radius:1px;
 	box-shadow:1px 1px 1px transparentize(black,0.9) inset;
 
+	@media (min-width: 768px){
+		width: 15%;
+	}
+	@media (min-width: 992px){
+		width:12.15%;
+	}
 }
+
+.form-control{
+	border-radius:2px;
+}
+
+label{
+	line-height: 1.42857;
+}
+
