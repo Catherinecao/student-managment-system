@@ -384,6 +384,14 @@ th {
   color: white;
   margin-right: 20px; }
 
+.btn-primary {
+  padding: 1em 1.5em;
+  text-decoration: none;
+  border: 1px solid white;
+  background-color: #FF9800;
+  color: white;
+  font-size: 1.2em; }
+
 .col-md-9 {
   color: white;
   text-align: center;
@@ -396,6 +404,10 @@ th {
   @media (min-width: 992px) {
     .col-md-3 {
       height: 100vh; } }
+
+input {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) inset;
+  background-color: rgba(128, 128, 128, 0.05); }
 
 hr {
   border-color: rgba(114, 68, 0, 0.2);
@@ -474,6 +486,9 @@ hr {
 label {
   line-height: 1.42857; }
 
+a:hover {
+  text-decoration: none; }
+
 .navbar {
   background-color: white;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
@@ -493,6 +508,18 @@ label {
 
 .navbar-inverse .navbar-toggle {
   background-color: #FF9800; }
+
+.btn-search:hover, .btn-search:active,
+.btn-success:hover, .btn-success:active {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) inset;
+  background-color: #F57C00;
+  color: white; }
+
+.navbar-inverse .navbar-brand {
+  color: gray; }
+  .navbar-inverse .navbar-brand:hover {
+    color: #FF9800;
+    transition: color 0.15s ease-in 0s; }
 
 .navbar-fixed-bottom {
   background-color: white;
@@ -519,7 +546,11 @@ label {
   .side-bar .menu li {
     list-style-type: none;
     padding: 10px 50px;
-    box-shadow: 1px -3px 7px rgba(128, 128, 128, 0.1); }
+    cursor: pointer; }
+    .side-bar .menu li:hover {
+      letter-spacing: 1px;
+      box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.3);
+      transition: letter-spacing 0.5s ease-in-out 0s, box-shadow 0.1s ease-in-out 0s; }
 
 .welcome {
   margin-bottom: 100px;
@@ -533,14 +564,15 @@ label {
     color: white;
     font-size: 3em;
     padding: 1em 1.5em;
-    line-height: 1.5em; }
-  .welcome .apply-now {
-    padding: 1em 1.5em;
-    text-decoration: none;
-    border: 1px solid white;
-    background-color: #FF9800;
-    color: white;
-    font-size: 1.2em; }
+    line-height: 1.5em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+.btn-primary:hover {
+  background-color: white;
+  color: #FF9800;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+  border-color: white;
+  transition: background-color 0.15s ease-in-out 0s,color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
 
 @media (min-width: 768px) {
   .scroll-container {

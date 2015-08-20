@@ -21,3 +21,18 @@
 	background-color:$orange;
 }
 
+.btn-search:hover,.btn-search:active,
+.btn-success:hover,.btn-success:active{
+	box-shadow:$dropshadow-inset;
+	background-color:$dark-orange;
+	color:$white;
+}
+
+.navbar-inverse .navbar-brand{
+	color:$gray;
+	&:hover{
+		color:$orange;
+		transition:color 0.15s ease-in 0s;
+	}
+	
+}
