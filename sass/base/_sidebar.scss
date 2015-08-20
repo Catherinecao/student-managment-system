@@ -21,10 +21,9 @@
 			cursor: pointer;
 
 			&:hover{
-				letter-spacing:1px;
 				box-shadow:$dropshadow-sidebar-iterm;
-				transition: letter-spacing 0.5s ease-in-out 0s,
-				box-shadow 0.1s ease-in-out 0s;
+				transition:
+				box-shadow 0.2s ease-in-out 0s;
 			}
 			
 		}
