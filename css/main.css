@@ -360,7 +360,8 @@ th {
 
 .container-fluid {
   padding: 0;
-  background-color: #FF9800; }
+  background-color: #FF9800;
+  position: relative; }
 
 .btn {
   border-radius: 0;
@@ -403,6 +404,9 @@ th {
   padding: 0; }
   @media (min-width: 992px) {
     .col-md-3 {
+      position: fixed;
+      right: 0;
+      top: 0;
       height: 100vh; } }
 
 input {
@@ -515,9 +519,9 @@ a:hover {
   background-color: #F57C00;
   color: white; }
 
-.navbar-inverse .navbar-brand {
+.navbar-inverse .navbar-brand, .nav-iterm {
   color: gray; }
-  .navbar-inverse .navbar-brand:hover {
+  .navbar-inverse .navbar-brand:hover, .nav-iterm:hover {
     color: #FF9800;
     transition: color 0.15s ease-in 0s; }
 
@@ -573,6 +577,16 @@ a:hover {
   border-color: white;
   transition: background-color 0.15s ease-in-out 0s,color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
 
+.btn-primary:active {
+  background-color: #F57C00;
+  color: white;
+  border-color: white; }
+
+.container-fluid h2 {
+  padding-top: 80px;
+  padding-left: 45px;
+  padding-right: 45px; }
+
 @media (min-width: 768px) {
   .scroll-container {
     padding: 0; } }
@@ -588,7 +602,8 @@ a:hover {
   @media (min-width: 768px) {
     .process-bar {
       width: 100%;
-      padding: 0; } }
+      padding: 0;
+      margin-top: -80px; } }
   @media (min-width: 992px) {
     .process-bar {
       margin-top: 80px;
@@ -630,7 +645,7 @@ a:hover {
 .first-q {
   margin-top: 20px; }
 
-.row {
+.col-md-9 .row {
   margin-top: 30px;
   margin-left: 0;
   margin-right: 0;

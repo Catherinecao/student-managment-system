@@ -12,7 +12,8 @@
 
 .container-fluid{
 	padding:0;
-	background-color:$orange;	
+	background-color:$orange;
+	position:relative;	
 }
 
 
@@ -61,11 +62,15 @@
 }
 
 .col-md-3{
+
 	background-color:$light-gray;
 	box-shadow:$dropshadow-sideber;
 	padding:0;
-	// height:100vh;
+	
 	@media (min-width: 992px){
+		position:fixed;
+		right:0;
+		top:0;
 		height:100vh;
 	}
 }

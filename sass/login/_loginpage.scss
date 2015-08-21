@@ -1,0 +1,5 @@
+.container-fluid{
+	h2{
+		@include container-padding-setting(80px)
+	}
+}
