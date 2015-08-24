@@ -1,7 +1,29 @@
 @mixin container-padding-setting($content-padding){
+	color:$white;
+	text-shadow:$text-shadow;
 	padding-top:$content-padding;
 	padding-left:45px;
 	padding-right:45px;
+	@media(min-width: 768px){
+		padding-top:$content-padding+50px;
+	}
+	@media (min-width: 992px){
+		padding-top:$content-padding+50px;
+	}
+	@media (min-width: 1200px){
+		padding-top:$content-padding;
+	}
+}
+
+@mixin container{
+	padding:0 percentage(20/320);
+	@media (min-width:768px){
+		padding:0 percentage(20/750);
+	}
+
+	@media (min-width:992px){
+		padding:0 percentage(30/970);
+	}
 }
 
 @mixin content-setting($setting){

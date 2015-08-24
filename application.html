@@ -78,27 +78,39 @@
               </p>
 
               <hr>
-
-              <div class="first-q">
-                <h4>Have you previously enrolled at Kingston before?</h4>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Yes
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox2" value="option2"> No
-                </label>
-              </div><!-- /. first-q-->
-
-              <div class="first-q">
-                <h4>What was your main activity before you start you study?</h4>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Living outside of New Zealand
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="inlineCheckbox2" value="option2"> Living in New Zealand
-                </label>
-              </div><!-- /. first-q-->
             </div><!-- /. instructions-->
+
+              <div class="row">
+                <div class="col-md-6">
+                  <lable class="control-label">Have you previously enrolled at Kingston before?</lable>
+                </div>
+                <div class="col-md-6 clearfix">
+                  <select name="EthnicityId" class="valid" id="EthnicityId" aria-invalid="false" aria-required="true" aria-describedby="EthnicityId-error" data-val-required="The Ethnicity: field is required." data-val-number="The field Ethnicity: must be a number." data-val="true" htmlattributes="{ class = form-control }">
+                    <option value="">--Select--</option>
+                    <option value="1">New Zealander</option>
+                    <option value="2">Australian</option>
+                    <option selected="selected" value="3">Chinese</option>
+                  </select>
+                  <span class="text-danger field-validation-valid" data-valmsg-replace="true" data-valmsg-for="EthnicityId"></span>
+                  </div>   
+                </div><!-- /. first-q-->
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>What was your main activity before you start you study?</p>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label class="checkbox">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Living outside of New Zealand
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" id="inlineCheckbox2" value="option2"> Living in New Zealand
+                    </label>
+                    <span class="checkbox">zdkjhgljxdhbfjxhbfjfhxbljb</span>
+                  </div>  
+                </div><!-- /. first-q-->
+            
           </div><!-- /. scroll-content-->
 
           <div class="scroll-content clearfix" id="step-2">
@@ -209,6 +221,13 @@
           
           <div class="scroll-content clearfix" id="step-3">
             <h3>CONTACT DETAILS</h3>
+             <div class="form-group">
+        <label class="control-label col-md-2" for="IsDomestic">Is a Domestic Student</label>
+        <div class="col-md-10">
+            <select class="form-control list-box tri-state" id="IsDomestic" name="IsDomestic"><option selected="selected" value="">Not Set</option>
+    <option value="true">True</option>
+    <option value="false">False</option>
+    </select
           </div><!-- /.CONTACT DETAILS -->
 
           <div class="scroll-content clearfix" id="step-4">

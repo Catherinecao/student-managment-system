@@ -10,103 +10,319 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-   <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/jquery.waypoints.min.js"></script>
+  <script src="js/vendor/sticky.min.js"></script>
+  <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/vendor/velocity.min.js"></script>
   <script src="js/main.js"></script>
 </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/Home">Kinston Student Management System</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/Home">Home</a></li>
-                    <li><a href="/Applicant">Applicant</a></li>                    
-                    <li><a href="/Agent">Agent</a></li>
-                    <li><a href="/Marketing">Marketing</a></li>
-                    <li><a href="/Admin">Admin</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/Account/Register" id="registerLink">Register</a></li>
-                    <li><a href="/Account/Login" id="loginLink">Log in</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <!-- <div class="container"> -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Kingston</a>
         </div>
-    </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Search" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-search">Search</button>
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      <!-- </div> -->
+    </nav><!--/.navbar -->
 
- <main class="container-fluid">
+    <main class="container-fluid">
+      <div class="content col-md-9 ">
         
+          <div class="row process-bar">
+            <a class="col-md-1 step actived" href="#step-1"></a>
+            <a class="col-md-1 step" href="#step-2"></a>
+            <a class="col-md-1 step" href="#step-3"></a>
+            <a class="col-md-1 step" href="#step-4"></a>
+            <a class="col-md-1 step" href="#step-5"></a>
+            <a class="col-md-1 step" href="#step-6"></a>
+            <a class="col-md-1 step" href="#step-7"></a>
+            <a class="col-md-1 step" href="#step-8"></a>
+          </div><!-- /.process-bar -->
 
+        <!-- scroll-container -->
+        <div class="scroll-container">
 
-<h2>Log in.</h2>
-<div class="row">
-    <div class="col-md-8">
-        <section id="loginForm">
-        <form action="/Account/Login" class="form-horizontal" method="post" role="form">
-            <input name="__RequestVerificationToken" type="hidden" value="nAODb-g41Lh_rLmAJtrVpcy7x3DYHMgbTDXgMlS2giGyl8MRWOESsQyo3YDFlebVNRIUT7t_maWWDwHLRPKMc8tREusSlxn9l0Sgd2TSuyo1" />                
-            <h4>Use a local account to log in.</h4>
-                <hr />
-                <div class="form-group">
-                    <label class="col-md-2 control-label" for="UserName">User name</label>
-                    <div class="col-md-10">
-                        <input class="form-control" data-val="true" data-val-required="The User name field is required." id="UserName" name="UserName" type="text" value="" />
-                        <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
-                    </div>
+          <!-- scroll-content -->
+          <div class="scroll-content" id="step-1">
+            <div class="application">
+              <h1>Application Form for International Student</h1>
+              <p>Welcome to the Kingston Institute of Business & Technology (KIBT). Please read the instructions below carefully before you complete this application form.</p>
+            </div>
+
+            <div class="instructions">
+              <h3>INSTRUCTIONS</h3>
+              <p>The purpose of this application is to get from you the information we need to offer you a place and to enrol you onto a course at KIBT. We also need to collect information which is required by the Ministry of Education and other Government agencies for statistical reasons.
+
+              Prior to completing this form, all students must first read the KIBT Student Handbook in full. This is available on request from KIBT or can be viewed at www.kingston.ac.nz. Prospective students must also review the Code of Practice for the Pastoral care of International Students published by the New Zealand Qualification Authority (NZQA).
+              </p>
+
+              <hr>
+
+              <div class="first-q">
+                <h4>Have you previously enrolled at Kingston before?</h4>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Yes
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"> No
+                </label>
+              </div><!-- /. first-q-->
+
+              <div class="first-q">
+                <h4>What was your main activity before you start you study?</h4>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Living outside of New Zealand
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"> Living in New Zealand
+                </label>
+              </div><!-- /. first-q-->
+            </div><!-- /. instructions-->
+          </div><!-- /. scroll-content-->
+
+          <div class="scroll-content clearfix" id="step-2">
+            <h3>PERSONAL DETAILS</h3>
+            <div class="form-container clearfix">
+              <div class="col-12">
+               <label class="control-label">Title</label>
+               <div class="checkbox-container">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Mr
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Mrs
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> Ms
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox4" value="option4"> Miss
+                  </label>
+                  <input type="text" class="form-control others" placeholder="Others">
                 </div>
-                <div class="form-group">
-                    <label class="col-md-2 control-label" for="Password">Password</label>
-                    <div class="col-md-10">
-                        <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password" />
-                        <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
-                    </div>
+              </div>
+
+               <div class="col-6">
+                <label class="control-label">First name</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="First name">
+              </div>
+
+               <div class="col-6">
+                <label class="control-label">Last name</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Last name">
+              </div> 
+
+              <div class="col-6">
+                <label class="control-label">Preferred name</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Preferred name">
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Date of Birth</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Date of Birth">
+              </div>
+
+               <div class="col-12">
+               <label class="control-label">Gender</label>
+               <div class="checkbox-container">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Male
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Female
+                  </label>
                 </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <div class="checkbox">
-                            <input data-val="true" data-val-required="The Remember me? field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
-                            <label for="RememberMe">Remember me?</label>
-                        </div>
-                    </div>
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Country of Citizenship</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Country of Citizenship">
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Ethnicity</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Ethnicity">
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Passport No</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Passport No">
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Passport Expiry Date</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Passport Expiry Date">
+              </div>
+
+              <div class="col-12">
+               <label class="control-label">Current Visa Type</label>
+               <div class="checkbox-container">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1"> Student Visa
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2"> Visitor Visa
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3"> Work Visa
+                  </label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="inlineCheckbox4" value="option4"> Working Holiday Visa
+                  </label>
                 </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Log in" class="btn btn-default" />
-                    </div>
-                </div>
-                <p>
-                    <a href="/Account/Register">Register</a> if you don't have a local account.
-                </p>
-    <p>
-        <a href="/Account/ResendEmailConfirmation">Resend confirmation email</a> if you didn't receive the email.
-    </p>
-</form>        </section>
-    </div>
-    <div class="col-md-4">
-        <section id="socialLoginForm">
+              </div>
+
+              <div class="col-6">
+                <label class="control-label">Visa Expiry Date</label>
+                <input class="form-control" type="text" id="formGroupInput" placeholder="Visa Expiry Date">
+              </div>
+
+              <div class="col-12">
+                <label for="InputFile">Submit a softcopy of Passport</label>
+                <input type="file" id="exampleInputFile">
+                <button class="btn btn-submit">Submit</button>
+              </div>
+
+            </div><!-- /.form-container -->
+          </div><!-- /.PERSONAL DETAILS -->
+          
+          <div class="scroll-content clearfix" id="step-3">
+            <h3>CONTACT DETAILS</h3>
             
-<h4>Use another service to log in.</h4>
-<hr />
-        <div>
-            <p>There are no external authentication services configured. See <a href="http://go.microsoft.com/fwlink/?LinkId=313242">this article</a>
-            for details on setting up this ASP.NET application to support logging in via external services.</p>
+          </div><!-- /.CONTACT DETAILS -->
+
+          <div class="scroll-content clearfix" id="step-4">
+            <h3>PROGRAMME INFORMATION</h3>
+            <div class="col-6">
+            <label class="control-label " for="FirstName">First Name(s):</label>
+
+            <input name="FirstName" class="form-control text-box single-line" id="FirstName" type="text" value="222" data-val-required="The First Name(s): field is required." data-val="true">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="FirstName"></span>
+
         </div>
 
+        <div class="col-6">
+            <label class="control-label" for="LastName">Last Name:</label>
 
-        </section>
-    </div>
-</div>
+            <input name="LastName" class="form-control text-box single-line" id="LastName" type="text" value="444" data-val-required="The Last Name: field is required." data-val="true">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="LastName"></span>
 
-        <hr />
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="PreferredName">Preferred Name:</label>
+
+            <input name="PreferredName" class="form-control text-box single-line" id="PreferredName" type="text" value="666" data-val-required="The Preferred Name: field is required." data-val="true">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="PreferredName"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="DateBirth">Date of Birth:</label>
+
+            <input name="DateBirth" class="form-control text-box single-line" id="DateBirth" type="datetime" value="2/22/2014 12:00:00 AM" data-val-required="The Date of Birth: field is required." data-val="true" data-val-date="The field Date of Birth: must be a date.">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="DateBirth"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="CitizenshipCountryId">Country of Citizenship:</label>
+
+            <select name="CitizenshipCountryId" id="CitizenshipCountryId" data-val-required="The Country of Citizenship: field is required." data-val-number="The field Country of Citizenship: must be a number." data-val="true" htmlattributes="{ class = form-control }"><option value="">--Select--</option>
+<option value="1">New Zealand</option>
+<option value="2">Australia</option>
+<option selected="selected" value="3">China</option>
+</select>
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="CitizenshipCountryId"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="EthnicityId">Ethnicity:</label>
+
+            <select name="EthnicityId" class="valid" id="EthnicityId" aria-invalid="false" aria-required="true" aria-describedby="EthnicityId-error" data-val-required="The Ethnicity: field is required." data-val-number="The field Ethnicity: must be a number." data-val="true" htmlattributes="{ class = form-control }"><option value="">--Select--</option>
+<option value="1">New Zealander</option>
+<option value="2">Australian</option>
+<option selected="selected" value="3">Chinese</option>
+</select>
+            <span class="text-danger field-validation-valid" data-valmsg-replace="true" data-valmsg-for="EthnicityId"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="PassportNo">Passport No.:</label>
+
+            <input name="PassportNo" class="form-control text-box single-line" id="PassportNo" type="text" value="G57858698">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="PassportNo"></span>
+            &lt;
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="PassportExpiryDate">Passport Expiry Date:</label>
+
+            <input name="PassportExpiryDate" class="form-control text-box single-line" id="PassportExpiryDate" type="datetime" value="3/21/2016 12:00:00 AM" data-val="true" data-val-date="The field Passport Expiry Date: must be a date.">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="PassportExpiryDate"></span>
+
+        </div>
+          </div><!-- /.PROGRAMME INFORMATION -->
         
-    </main>
-    <footer>
-        <p>&copy; 2015 - Kingston</p>
-    </footer>
+          <div class="scroll-content clearfix" id="step-5">
+            <h3>PROGRAMME INFORMATION</h3>
+          </div><!-- /.PROGRAMME INFORMATION -->
+          
+          <div class="scroll-content clearfix" id="step-6">
+            <h3>ADDITIONAL SERVICES</h3>
+          </div><!-- /.Additional Services -->
+          
+          <div class="scroll-content clearfix" id="step-6">
+            <h3>AGENT INFORMATION</h3>
+          </div><!-- /.AGENT INFORMATION -->
+          
+          <div class="scroll-content clearfix" id="step-6">
+            <h3>DECLARATION & SIGNATURE</h3>
+          </div><!-- /.DECLARATION & SIGNATURE -->
+
+        </div><!-- /.scroll-container -->
+      </div><!--/.content -->
+
+      <div class="side-bar col-md-3">
+        <div class="menu">
+          <ul>
+            <li><a href="#">New application</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div><!--/.sidebar -->
+    </main><!--/.container -->
+  
+<!--   <footer class="navbar-fixed-bottom">
+    <div class="container">
+      <ul>
+        <li>Kingston students managment system</li>
+        <li>contact us</li>
+      </ul>
+    </div>
+  </footer> -->
   </body>
 </html>

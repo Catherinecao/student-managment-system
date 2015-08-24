@@ -28,11 +28,24 @@
 	color:$white;
 }
 
-.navbar-inverse .navbar-brand, .nav-iterm{
-	color:$gray;
+.navbar-inverse .navbar-brand{
+	font-size:22px;
+	color:$orange;
 	&:hover{
-		color:$orange;
-		transition:color 0.15s ease-in 0s;
+		color:$darker-orange;
+		transition:color 0.1s ease-in 0s;
 	}
 	
+}
+
+.navbar-inverse .navbar-nav{
+	li{
+		a{
+			color:$gray;
+			&:hover{
+				color:$orange;
+				transition:color 0.1s ease-in 0s;
+			}
+		}
+	}
 }

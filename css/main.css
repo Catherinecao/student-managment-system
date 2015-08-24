@@ -409,21 +409,20 @@ th {
       top: 0;
       height: 100vh; } }
 
-input {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) inset;
-  background-color: rgba(128, 128, 128, 0.05); }
-
 hr {
   border-color: rgba(114, 68, 0, 0.2);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   margin: 50px 4.6875%; }
 
 .control-label {
-  float: left; }
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 10px;
+  padding: 5px;
+  width: 30%; }
 
 .col-12 {
   width: 100%;
-  float: left;
   vertical-align: middle;
   margin-bottom: 20px;
   display: inline-block;
@@ -432,7 +431,8 @@ hr {
   .col-12 .control-label {
     padding: 5px;
     width: 15%;
-    vertical-align: middle; }
+    vertical-align: middle;
+    float: left; }
   .col-12 .form-control {
     width: 35%;
     float: right;
@@ -456,13 +456,15 @@ hr {
     width: 30%;
     vertical-align: middle; }
   .col-6 .form-control,
-  .col-6 .checkbox-container {
+  .col-6 .checkbox-container,
+  .col-6 select {
     width: 70%;
     float: right;
     vertical-align: middle;
     text-align: left; }
     .col-6 .form-control .form-control-others,
-    .col-6 .checkbox-container .form-control-others {
+    .col-6 .checkbox-container .form-control-others,
+    .col-6 select .form-control-others {
       position: relative;
       display: inline-block;
       margin-left: 20px; }
@@ -493,6 +495,19 @@ label {
 a:hover {
   text-decoration: none; }
 
+.form-group .control-label {
+  text-align: left; }
+.form-group .list-box {
+  width: 100%; }
+
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0; }
+
+select {
+  border-radius: 1px;
+  line-height: 1.42857; }
+
 .navbar {
   background-color: white;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
@@ -519,11 +534,18 @@ a:hover {
   background-color: #F57C00;
   color: white; }
 
-.navbar-inverse .navbar-brand, .nav-iterm {
+.navbar-inverse .navbar-brand {
+  font-size: 22px;
+  color: #FF9800; }
+  .navbar-inverse .navbar-brand:hover {
+    color: #724400;
+    transition: color 0.1s ease-in 0s; }
+
+.navbar-inverse .navbar-nav li a {
   color: gray; }
-  .navbar-inverse .navbar-brand:hover, .nav-iterm:hover {
+  .navbar-inverse .navbar-nav li a:hover {
     color: #FF9800;
-    transition: color 0.15s ease-in 0s; }
+    transition: color 0.1s ease-in 0s; }
 
 .navbar-fixed-bottom {
   background-color: white;
@@ -551,7 +573,7 @@ a:hover {
     list-style-type: none;
     padding: 10px 50px;
     cursor: pointer; }
-    .side-bar .menu li:hover {
+    .side-bar .menu li:hover, .side-bar .menu li .active {
       box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.3);
       transition: box-shadow 0.2s ease-in-out 0s; }
 
@@ -583,9 +605,61 @@ a:hover {
   border-color: white; }
 
 .container-fluid h2 {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   padding-top: 80px;
   padding-left: 45px;
   padding-right: 45px; }
+  @media (min-width: 768px) {
+    .container-fluid h2 {
+      padding-top: 130px; } }
+  @media (min-width: 992px) {
+    .container-fluid h2 {
+      padding-top: 130px; } }
+  @media (min-width: 1200px) {
+    .container-fluid h2 {
+      padding-top: 80px; } }
+.container-fluid h4 {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  padding-left: 45px;
+  padding-right: 45px; }
+  @media (min-width: 768px) {
+    .container-fluid h4 {
+      padding-top: 70px; } }
+  @media (min-width: 992px) {
+    .container-fluid h4 {
+      padding-top: 70px; } }
+  @media (min-width: 1200px) {
+    .container-fluid h4 {
+      padding-top: 20px; } }
+.container-fluid section {
+  padding: 0 6.25%; }
+  @media (min-width: 768px) {
+    .container-fluid section {
+      padding: 0 2.66667%; } }
+  @media (min-width: 992px) {
+    .container-fluid section {
+      padding: 0 3.09278%; } }
+.container-fluid .form-group {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding-top: 0;
+  padding-left: 45px;
+  padding-right: 45px; }
+  @media (min-width: 768px) {
+    .container-fluid .form-group {
+      padding-top: 50px; } }
+  @media (min-width: 992px) {
+    .container-fluid .form-group {
+      padding-top: 50px; } }
+  @media (min-width: 1200px) {
+    .container-fluid .form-group {
+      padding-top: 0; } }
+  .container-fluid .form-group .col-md-10 {
+    padding-left: 0;
+    padding-right: 0; }
 
 @media (min-width: 768px) {
   .scroll-container {
@@ -642,7 +716,7 @@ a:hover {
 .instructions p {
   text-align: left; }
 
-.first-q {
+.row {
   margin-top: 20px; }
 
 .col-md-9 .row {
@@ -650,6 +724,12 @@ a:hover {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 30px; }
+
+.col-md-6 {
+  text-align: left;
+  display: inline-block; }
+  .col-md-6 select {
+    width: 100%; }
 
 .actived {
   background-color: #FFE7C3;

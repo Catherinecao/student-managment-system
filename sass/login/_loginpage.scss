@@ -1,5 +1,23 @@
 .container-fluid{
 	h2{
-		@include container-padding-setting(80px)
+		@include container-padding-setting(80px);	
 	}
+
+	h4{
+		@include container-padding-setting(20px);
+	}
+
+    section{
+		@include container;
+	}
+
+	.form-group{
+		@include container-padding-setting(0);
+
+		.col-md-10{
+			padding-left:0;
+			padding-right:0;
+		}
+	}
+
 }

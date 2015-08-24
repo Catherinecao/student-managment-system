@@ -20,7 +20,7 @@
 			padding: 10px 50px;
 			cursor: pointer;
 
-			&:hover{
+			&:hover,.active{
 				box-shadow:$dropshadow-sidebar-iterm;
 				transition:
 				box-shadow 0.2s ease-in-out 0s;

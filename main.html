@@ -1,0 +1,265 @@
+<main class="container-fluid">
+        
+
+
+
+<!--
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Kingston</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-search">Search</button>
+                <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+        </div>
+    </div>
+</nav><!--/.navbar -->
+
+
+    <div class="content col-md-9">
+        <div class="scroll-container">
+            <div class="scroll-content clearfix" id="contentArea">
+
+
+
+<form id="formPersonalDetails" action="/AdmissionApp/PersonalDetails" enctype="multipart/form-data" method="post" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="VeUA9_VjoP4O7mznAyAQpwqzrYM3ZzsvCGqSbpBJrIjqEdMdkZTl5-ML6S1IDHHPw8bYYNLPHtv4ToxZHo7Bf7qBWv-66R1wQCPUFcgfr2_1zC6XpkMd90cZI3YJc4zzUfAu3ZFzassPUep_qGrZmQ2">    <div class="form-horizontal">
+                
+        <input name="AppId" id="AppId" type="hidden" value="27" data-val-required="The AppId field is required." data-val-number="The field AppId must be a number." data-val="true">
+        <input name="TotalSteps" id="TotalSteps" type="hidden" value="7" data-val-required="The TotalSteps field is required." data-val-number="The field TotalSteps must be a number." data-val="true">
+        <input name="CurrentStep" id="CurrentStep" type="hidden" value="2" data-val-required="The CurrentStep field is required." data-val-number="The field CurrentStep must be a number." data-val="true">
+        <input name="FarestStep" id="FarestStep" type="hidden" value="7" data-val-required="The FarestStep field is required." data-val-number="The field FarestStep must be a number." data-val="true">
+        <input name="UserId" id="UserId" type="hidden" value="">
+
+        <div class="col-6">
+            <label class="control-label " for="HasEnrolledAtKIBTBefore">Have you previously enrolled at Kingston before?</label>
+
+            <select name="HasEnrolledAtKIBTBefore" class="list-box tri-state valid" id="HasEnrolledAtKIBTBefore" aria-invalid="false" aria-required="true" aria-describedby="HasEnrolledAtKIBTBefore-error" data-val-required="The Have you previously enrolled at Kingston before? field is required." data-val="true"><option value="">Not Set</option>
+<option value="true">True</option>
+<option selected="selected" value="false">False</option>
+</select>
+            
+            <span class="text-danger field-validation-valid" data-valmsg-replace="true" data-valmsg-for="HasEnrolledAtKIBTBefore"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="MainActivityBeforeStudy">What was your main activity before you start you study? </label>
+
+            <select name="MainActivityBeforeStudy" id="MainActivityBeforeStudy" data-val-required="The What was your main activity before you start you study?  field is required." data-val="true"><option value="">--Select--</option>
+<option selected="selected" value="0">Living Outside Of New Zealand</option>
+<option value="1">Living In New Zealand</option>
+</select>
+            
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="MainActivityBeforeStudy"></span>
+
+        </div>
+
+
+        <div class="col-6">
+            <label class="control-label " for="FirstName">First Name(s):</label>
+
+            <input name="FirstName" class="form-control text-box single-line" id="FirstName" type="text" value="222" data-val-required="The First Name(s): field is required." data-val="true">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="FirstName"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label" for="LastName">Last Name:</label>
+
+            <input name="LastName" class="form-control text-box single-line" id="LastName" type="text" value="444" data-val-required="The Last Name: field is required." data-val="true">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="LastName"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="PreferredName">Preferred Name:</label>
+
+            <input name="PreferredName" class="form-control text-box single-line" id="PreferredName" type="text" value="666" data-val-required="The Preferred Name: field is required." data-val="true">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="PreferredName"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="DateBirth">Date of Birth:</label>
+
+            <input name="DateBirth" class="form-control text-box single-line" id="DateBirth" type="datetime" value="2/22/2014 12:00:00 AM" data-val-required="The Date of Birth: field is required." data-val="true" data-val-date="The field Date of Birth: must be a date.">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="DateBirth"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="CitizenshipCountryId">Country of Citizenship:</label>
+
+            <select name="CitizenshipCountryId" id="CitizenshipCountryId" data-val-required="The Country of Citizenship: field is required." data-val-number="The field Country of Citizenship: must be a number." data-val="true" htmlattributes="{ class = form-control }"><option value="">--Select--</option>
+<option value="1">New Zealand</option>
+<option value="2">Australia</option>
+<option selected="selected" value="3">China</option>
+</select>
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="CitizenshipCountryId"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="EthnicityId">Ethnicity:</label>
+
+            <select name="EthnicityId" class="valid" id="EthnicityId" aria-invalid="false" aria-required="true" aria-describedby="EthnicityId-error" data-val-required="The Ethnicity: field is required." data-val-number="The field Ethnicity: must be a number." data-val="true" htmlattributes="{ class = form-control }"><option value="">--Select--</option>
+<option value="1">New Zealander</option>
+<option value="2">Australian</option>
+<option selected="selected" value="3">Chinese</option>
+</select>
+            <span class="text-danger field-validation-valid" data-valmsg-replace="true" data-valmsg-for="EthnicityId"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="PassportNo">Passport No.:</label>
+
+            <input name="PassportNo" class="form-control text-box single-line" id="PassportNo" type="text" value="G57858698">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="PassportNo"></span>
+            &lt;
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="PassportExpiryDate">Passport Expiry Date:</label>
+
+            <input name="PassportExpiryDate" class="form-control text-box single-line" id="PassportExpiryDate" type="datetime" value="3/21/2016 12:00:00 AM" data-val="true" data-val-date="The field Passport Expiry Date: must be a date.">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="PassportExpiryDate"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="VisaExpiryDate">Visa Expiry Date:</label>
+
+            <input name="VisaExpiryDate" class="form-control text-box single-line" id="VisaExpiryDate" type="datetime" value="" data-val="true" data-val-date="The field Visa Expiry Date: must be a date.">
+            <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="VisaExpiryDate"></span>
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="VisaType">Current Visa Type:</label>
+
+            <div class="checkbox">
+                <select name="VisaType" id="VisaType"><option value="">--Select--</option>
+<option selected="selected" value="0">Student Visa</option>
+<option value="1">Visitor Visa</option>
+<option value="2">Work Visa</option>
+<option value="3">Working Holiday Visa</option>
+</select>
+                <span class="field-validation-valid text-danger" data-valmsg-replace="true" data-valmsg-for="VisaType"></span>
+            </div>
+
+        </div>
+
+        
+
+        <div class="col-6">
+            <label class="control-label " for="Gender">Gender:</label>
+
+            
+                <select name="Gender" class="valid" id="Gender" aria-invalid="false" aria-required="true" aria-describedby="Gender-error" data-val-required="The Gender: field is required." data-val="true"><option value="">--Select--</option>
+<option value="0">Female</option>
+<option selected="selected" value="1">Male</option>
+<option value="2">X</option>
+</select>
+                <span class="text-danger field-validation-valid" data-valmsg-replace="true" data-valmsg-for="Gender"></span>
+            
+
+        </div>
+
+        <div class="col-6">
+            <label class="control-label " for="MyTitle">Title:</label>
+
+
+            <select name="MyTitle" class="valid" id="MyTitle" aria-invalid="false" aria-required="true" aria-describedby="MyTitle-error" data-val-required="The Title: field is required." data-val="true"><option value="">--Select--</option>
+<option selected="selected" value="0">Mr</option>
+<option value="1">Mrs</option>
+<option value="2">Ms</option>
+<option value="3">Miss</option>
+<option value="4">Other</option>
+</select>
+            <span class="text-danger field-validation-valid" data-valmsg-replace="true" data-valmsg-for="MyTitle"></span>
+
+
+        </div>
+
+
+        <div class="col-6">
+            <label class="control-label " for="PassportCopyFilePath">Please Submit a Soft Copy of Your Passport: (gif,jpg,jpeg,png,bmp,pdf)</label>
+
+                <input name="uploadPassport" id="uploadPassport" type="file" value="Choose File">
+                <label>no passport uploaded</label>
+
+
+
+
+
+        </div>
+        <div class="col-12">
+            
+
+
+
+
+        </div>
+
+        <div class="col-6">
+            <div class="col-md-offset-2 col-md-10">
+                <input class="btn btn-default" type="submit" value="Save">
+            </div>
+
+        </div>
+    </div>
+</form>    <div class="col-12">
+        <input id="navNewAdmissionApp" type="button" value="Start" data-target="1" data-id="27" ,="" data-total="7" data-farest="7" data-action="NewAdmissionApp">
+        <input id="navPersonalDetails" type="button" value="PersonalDetails" data-target="2" data-id="27" ,="" data-total="7" data-farest="7" data-action="PersonalDetails">
+        <input id="navContactDetails" type="button" value="ContactDetails" data-target="3" data-id="27" ,="" data-total="7" data-farest="7" data-action="ContactDetails">
+        <input id="navProgramInformation" type="button" value="ProgramInformation" data-target="4" data-id="27" ,="" data-total="7" data-farest="7" data-action="ProgramInformation">
+        <input id="navEducationBackground" type="button" value="EducationBackground" data-target="5" data-id="27" ,="" data-total="7" data-farest="7" data-action="EducationBackground">
+        <input id="navAdditionalServices" type="button" value="AdditionalServices" data-target="6" data-id="27" ,="" data-total="7" data-farest="7" data-action="AdditionalServices">
+        <input id="navAgentInformation" type="button" value="AgentInformation" data-target="7" data-id="27" ,="" data-total="7" data-farest="7" data-action="AgentInformation">
+        <input id="navAppEnd" type="button" value="Signature" data-target="8" data-id="27" ,="" data-total="7" data-farest="7" data-action="AppEnd">
+    </div>
+
+
+
+</div>
+
+        </div><!--/.content -->
+    </div>
+    <div class="side-bar col-md-3">
+        <div class="menu">
+            <ul>
+                <li><a id="newApplication" href="#">New application</a></li>
+                <li><a id="applicationList" href="#">My applications</a></li>
+                <li><a href="#">Other Agent Features</a></li>
+            </ul>
+        </div>
+
+    </div><!--/.sidebar -->
+
+
+
+
+        <hr>
+        <footer>
+            <p>© 2015 - Kingston</p>
+        </footer>
+    </main>

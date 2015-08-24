@@ -53,478 +53,115 @@
         <div id="contentArea" class="scroll-content">
             <h2>Student</h2>
 
-<form action="/student/student/" method="post"><input name="__RequestVerificationToken" type="hidden" value="m6NC56ioKwRecIBgidUs0x2b1d-M7HxSO0Yjx_C8Pp5UCNQsaRIx13144PyLgyTcBc-WREygM7tSTWI5oc1Odae3hoxlIZuAGjdlPlPnW9YaZv2aeZ0fhlBCRLSX-iZAOELx8aS74gFBmqjlX4stJQ2" />                <div class="form-horizontal">
-                    <h4>StudentViewModel</h4>
-                    <hr />
-                    
-                    <input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Id" name="Id" type="hidden" value="0" />
+<form action="/student/student/" method="post">
+    <input name="__RequestVerificationToken" type="hidden" value="m6NC56ioKwRecIBgidUs0x2b1d-M7HxSO0Yjx_C8Pp5UCNQsaRIx13144PyLgyTcBc-WREygM7tSTWI5oc1Odae3hoxlIZuAGjdlPlPnW9YaZv2aeZ0fhlBCRLSX-iZAOELx8aS74gFBmqjlX4stJQ2" />                
+    <div class="form-horizontal">
+    <h4>StudentViewModel</h4>
+    <hr />
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="StudentCardID">StudentCardID</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field StudentCardID must be a number." id="StudentCardID" name="StudentCardID" type="number" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="StudentCardID" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <input data-val="true" data-val-number="The field Id must be a number." data-val-required="The Id field is required." id="Id" name="Id" type="hidden" value="0" />
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="FirstName">First Name (*)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-required="The First Name (*) field is required." id="FirstName" name="FirstName" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="StudentCardID">StudentCardID</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-number="The field StudentCardID must be a number." id="StudentCardID" name="StudentCardID" type="number" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="StudentCardID" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="LastName">Last Name (*)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-required="The Last Name (*) field is required." id="LastName" name="LastName" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="FirstName">First Name (*)</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-required="The First Name (*) field is required." id="FirstName" name="FirstName" type="text" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PreferedName">Prefered Name</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="PreferedName" name="PreferedName" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PreferedName" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="LastName">Last Name (*)</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-required="The Last Name (*) field is required." id="LastName" name="LastName" type="text" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="DateBirth">Date of Birth</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-date="The field Date of Birth must be a date." id="DateBirth" name="DateBirth" type="datetime" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="DateBirth" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="PreferedName">Prefered Name</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" id="PreferedName" name="PreferedName" type="text" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="PreferedName" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="Gender">Gender (*)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-required="The Gender (*) field is required." id="Gender" name="Gender" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="Gender" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="DateBirth">Date of Birth</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-date="The field Date of Birth must be a date." id="DateBirth" name="DateBirth" type="datetime" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="DateBirth" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="CitizenshipCountryId">Country of Citizenship</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Country of Citizenship must be a number." id="CitizenshipCountryId" name="CitizenshipCountryId" type="number" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="CitizenshipCountryId" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="Gender">Gender (*)</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-required="The Gender (*) field is required." id="Gender" name="Gender" type="text" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="Gender" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="EthnicityId">Ethnicity</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Ethnicity must be a number." id="EthnicityId" name="EthnicityId" type="number" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="EthnicityId" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="CitizenshipCountryId">Country of Citizenship</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Country of Citizenship must be a number." id="CitizenshipCountryId" name="CitizenshipCountryId" type="number" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="CitizenshipCountryId" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="FirstLanguageId">First Language</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field First Language must be a number." id="FirstLanguageId" name="FirstLanguageId" type="number" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="FirstLanguageId" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="EthnicityId">Ethnicity</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Ethnicity must be a number." id="EthnicityId" name="EthnicityId" type="number" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="EthnicityId" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PassportNo">Passport Number (*)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-required="The Passport Number (*) field is required." id="PassportNo" name="PassportNo" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PassportNo" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="FirstLanguageId">First Language</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-number="The field First Language must be a number." id="FirstLanguageId" name="FirstLanguageId" type="number" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="FirstLanguageId" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PassportExpDate">Passport Expiry Date</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-date="The field Passport Expiry Date must be a date." id="PassportExpDate" name="PassportExpDate" type="datetime" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PassportExpDate" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="PassportNo">Passport Number (*)</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-required="The Passport Number (*) field is required." id="PassportNo" name="PassportNo" type="text" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="PassportNo" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="IsDomestic">Is a Domestic Student</label>
-                        <div class="col-md-10">
-                            <select class="form-control list-box tri-state" id="IsDomestic" name="IsDomestic"><option selected="selected" value="">Not Set</option>
-<option value="true">True</option>
-<option value="false">False</option>
-</select>
-                            <span class="field-validation-valid text-danger" data-valmsg-for="IsDomestic" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="PassportExpDate">Passport Expiry Date</label>
+        <div class="col-md-10">
+            <input class="form-control text-box single-line" data-val="true" data-val-date="The field Passport Expiry Date must be a date." id="PassportExpDate" name="PassportExpDate" type="datetime" value="" />
+            <span class="field-validation-valid text-danger" data-valmsg-for="PassportExpDate" data-valmsg-replace="true"></span>
+        </div>
+    </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="CommentsPersonal">Comments (PERSONAL DETAILS)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="CommentsPersonal" name="CommentsPersonal" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="CommentsPersonal" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="HomePhone">Home Phone</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="HomePhone" name="HomePhone" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="HomePhone" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="Mobile">Mobile Phone</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="Mobile" name="Mobile" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="Mobile" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="Email">Email</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="Email" name="Email" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="EmergencyContact">Emergency Contact: Name</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="EmergencyContact" name="EmergencyContact" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="EmergencyContact" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="ECRelationship">Emergency Contact: Relationship</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="ECRelationship" name="ECRelationship" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="ECRelationship" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="ECMobile">Emergency Contact: Mobile Phone</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="ECMobile" name="ECMobile" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="ECMobile" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="ECHomeNo">Emergency Contact: Home Phone</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="ECHomeNo" name="ECHomeNo" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="ECHomeNo" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="CommentsContact">comments (STUDENT CONTACT DETAILS)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="CommentsContact" name="CommentsContact" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="CommentsContact" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="ProgramID">Program</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Program must be a number." id="ProgramID" name="ProgramID" type="number" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="ProgramID" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="ApplicationDate">Application Date</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-date="The field Application Date must be a date." id="ApplicationDate" name="ApplicationDate" type="datetime" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="ApplicationDate" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PreferedStartDate">Prefered Start Date</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-date="The field Prefered Start Date must be a date." id="PreferedStartDate" name="PreferedStartDate" type="datetime" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PreferedStartDate" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PreferredEndDate">Preferred End Date</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-date="The field Preferred End Date must be a date." id="PreferredEndDate" name="PreferredEndDate" type="datetime" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PreferredEndDate" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="DurationInWeeks">Duration (In Weeks)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Duration (In Weeks) must be a number." id="DurationInWeeks" name="DurationInWeeks" type="number" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="DurationInWeeks" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="ChristmasHoliday">Christmas Holiday (In Weeks)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Christmas Holiday (In Weeks) must be a number." id="ChristmasHoliday" name="ChristmasHoliday" type="number" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="ChristmasHoliday" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="AdministrationFee">Administration Fee</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Administration Fee must be a number." id="AdministrationFee" name="AdministrationFee" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="AdministrationFee" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="TuitionFeeAPerWeek">Tuition Fee A (per week)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Tuition Fee A (per week) must be a number." id="TuitionFeeAPerWeek" name="TuitionFeeAPerWeek" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="TuitionFeeAPerWeek" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="TuitionFeeBPerWeek">Tuition Fee B (per week)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Tuition Fee B (per week) must be a number." id="TuitionFeeBPerWeek" name="TuitionFeeBPerWeek" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="TuitionFeeBPerWeek" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="TuitionFeeATotal">Tuition Fee A (total)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Tuition Fee A (total) must be a number." id="TuitionFeeATotal" name="TuitionFeeATotal" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="TuitionFeeATotal" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="TuitionFeeBTotal">Tuition Fee B (total)</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Tuition Fee B (total) must be a number." id="TuitionFeeBTotal" name="TuitionFeeBTotal" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="TuitionFeeBTotal" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="MaterialFee">Material Fee</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Material Fee must be a number." id="MaterialFee" name="MaterialFee" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="MaterialFee" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="AccomodationFindingFee">Accomodation Finding Fee</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Accomodation Finding Fee must be a number." id="AccomodationFindingFee" name="AccomodationFindingFee" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="AccomodationFindingFee" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="AccomodationFee">Accomodation Fee</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Accomodation Fee must be a number." id="AccomodationFee" name="AccomodationFee" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="AccomodationFee" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="Insurance">International Insurance</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field International Insurance must be a number." id="Insurance" name="Insurance" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="Insurance" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="InsuranceStartDate">Insurance Start Date</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-date="The field Insurance Start Date must be a date." id="InsuranceStartDate" name="InsuranceStartDate" type="datetime" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="InsuranceStartDate" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="InsuranceEndDate">Insurance End Date</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-date="The field Insurance End Date must be a date." id="InsuranceEndDate" name="InsuranceEndDate" type="datetime" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="InsuranceEndDate" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="AirportPickupFee">Airport Pickup Fee</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Airport Pickup Fee must be a number." id="AirportPickupFee" name="AirportPickupFee" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="AirportPickupFee" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="LivingCost">Living Cost</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Living Cost must be a number." id="LivingCost" name="LivingCost" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="LivingCost" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="EducationLevyFee">Education Levy Fee</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Education Levy Fee must be a number." id="EducationLevyFee" name="EducationLevyFee" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="EducationLevyFee" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="Discount">Discount</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Discount must be a number." id="Discount" name="Discount" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="Discount" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="TotalFee">Total Fee</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field Total Fee must be a number." id="TotalFee" name="TotalFee" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="TotalFee" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="AgentCode">Agent Code</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="AgentCode" name="AgentCode" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="AgentCode" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="DoLiveWithIllness">Do you live with the effects of a significant injury, long-term illness, or disability?</label>
-                        <div class="col-md-10">
-                            <select class="form-control list-box tri-state" id="DoLiveWithIllness" name="DoLiveWithIllness"><option selected="selected" value="">Not Set</option>
-<option value="true">True</option>
-<option value="false">False</option>
-</select>
-                            <span class="field-validation-valid text-danger" data-valmsg-for="DoLiveWithIllness" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="HaveBeenConvicted">Have you ever been convicted of  or have a pending conviction for any offence against the law (apart from minor traffic convictions)?</label>
-                        <div class="col-md-10">
-                            <select class="form-control list-box tri-state" id="HaveBeenConvicted" name="HaveBeenConvicted"><option selected="selected" value="">Not Set</option>
-<option value="true">True</option>
-<option value="false">False</option>
-</select>
+    <div class="form-group">
+        <label class="control-label col-md-2" for="IsDomestic">Is a Domestic Student</label>
+        <div class="col-md-10">
+            <select class="form-control list-box tri-state" id="IsDomestic" name="IsDomestic"><option selected="selected" value="">Not Set</option>
+    <option value="true">True</option>
+    <option value="false">False</option>
+    </select>
+            
                             <span class="field-validation-valid text-danger" data-valmsg-for="HaveBeenConvicted" data-valmsg-replace="true"></span>
                         </div>
                     </div>
 
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="CurrentAdd_Id">CurrentAdd_Id</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field CurrentAdd_Id must be a number." id="CurrentAdd_Id" name="CurrentAdd_Id" type="number" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="CurrentAdd_Id" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="CurrentAdd_UnitAndStreet">Unit And Street</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="CurrentAdd_UnitAndStreet" name="CurrentAdd_UnitAndStreet" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="CurrentAdd_UnitAndStreet" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="CurrentAdd_Suburb">Suburb</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="CurrentAdd_Suburb" name="CurrentAdd_Suburb" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="CurrentAdd_Suburb" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="CurrentAdd_City">City</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="CurrentAdd_City" name="CurrentAdd_City" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="CurrentAdd_City" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="CurrentAdd_ZipCode">Zip Code</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="CurrentAdd_ZipCode" name="CurrentAdd_ZipCode" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="CurrentAdd_ZipCode" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PostalAdd_Id">PostalAdd_Id</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" data-val="true" data-val-number="The field PostalAdd_Id must be a number." id="PostalAdd_Id" name="PostalAdd_Id" type="number" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PostalAdd_Id" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PostalAdd_UnitAndStreet">Unit And Street</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="PostalAdd_UnitAndStreet" name="PostalAdd_UnitAndStreet" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PostalAdd_UnitAndStreet" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PostalAdd_Suburb">Suburb</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="PostalAdd_Suburb" name="PostalAdd_Suburb" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PostalAdd_Suburb" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PostalAdd_City">City</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="PostalAdd_City" name="PostalAdd_City" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PostalAdd_City" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="PostalAdd_ZipCode">Zip Code</label>
-                        <div class="col-md-10">
-                            <input class="form-control text-box single-line" id="PostalAdd_ZipCode" name="PostalAdd_ZipCode" type="text" value="" />
-                            <span class="field-validation-valid text-danger" data-valmsg-for="PostalAdd_ZipCode" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="IsPostalSameAsCurrent">Tick if the postal address is the same as current address</label>
-                        <div class="col-md-10">
-                            <div class="checkbox">
-                                <input class="check-box" data-val="true" data-val-required="The Tick if the postal address is the same as current address field is required." id="IsPostalSameAsCurrent" name="IsPostalSameAsCurrent" type="checkbox" value="true" /><input name="IsPostalSameAsCurrent" type="hidden" value="false" />
-                                <span class="field-validation-valid text-danger" data-valmsg-for="IsPostalSameAsCurrent" data-valmsg-replace="true"></span>
-                            </div>
-                        </div>
-                    </div>
+                   
 
                     <div class="form-group">
                         <div class="col-md-offset-2 col-md-10">
