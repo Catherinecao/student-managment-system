@@ -616,21 +616,26 @@ select {
   @media (min-width: 1200px) {
     .container-fluid h2 {
       padding-top: 80px; } }
-.container-fluid h4 {
+.container-fluid .col-md-8, .container-fluid .col-md-4 {
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   padding-top: 20px;
   padding-left: 45px;
   padding-right: 45px; }
   @media (min-width: 768px) {
-    .container-fluid h4 {
+    .container-fluid .col-md-8, .container-fluid .col-md-4 {
       padding-top: 70px; } }
   @media (min-width: 992px) {
-    .container-fluid h4 {
+    .container-fluid .col-md-8, .container-fluid .col-md-4 {
       padding-top: 70px; } }
   @media (min-width: 1200px) {
-    .container-fluid h4 {
+    .container-fluid .col-md-8, .container-fluid .col-md-4 {
       padding-top: 20px; } }
+  .container-fluid .col-md-8 hr, .container-fluid .col-md-4 hr {
+    margin-left: 0;
+    border-color: rgba(255, 255, 255, 0.5); }
+  .container-fluid .col-md-8 a, .container-fluid .col-md-4 a {
+    color: #9e15b5; }
 .container-fluid section {
   padding: 0 6.25%; }
   @media (min-width: 768px) {
@@ -639,24 +644,45 @@ select {
   @media (min-width: 992px) {
     .container-fluid section {
       padding: 0 3.09278%; } }
-.container-fluid .form-group {
+.container-fluid .form-group .col-md-offset-2 {
+  margin-left: 0;
+  position: relative; }
+  .container-fluid .form-group .col-md-offset-2 .checkbox input {
+    position: relative;
+    margin-left: 10px; }
+  .container-fluid .form-group .col-md-offset-2 .checkbox label {
+    padding-left: 10px; }
+.container-fluid .form-group .col-md-10 {
+  padding-left: 0;
+  padding-right: 0; }
+  .container-fluid .form-group .col-md-10 .btn-default {
+    text-decoration: none;
+    border: 0;
+    background-color: white;
+    color: #FF9800;
+    font-size: 1.2em;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); }
+    .container-fluid .form-group .col-md-10 .btn-default:hover {
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3); }
+
+.container-fluid form {
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  padding-top: 0;
+  padding-top: 20px;
   padding-left: 45px;
   padding-right: 45px; }
   @media (min-width: 768px) {
-    .container-fluid .form-group {
-      padding-top: 50px; } }
+    .container-fluid form {
+      padding-top: 70px; } }
   @media (min-width: 992px) {
-    .container-fluid .form-group {
-      padding-top: 50px; } }
+    .container-fluid form {
+      padding-top: 70px; } }
   @media (min-width: 1200px) {
-    .container-fluid .form-group {
-      padding-top: 0; } }
-  .container-fluid .form-group .col-md-10 {
-    padding-left: 0;
-    padding-right: 0; }
+    .container-fluid form {
+      padding-top: 20px; } }
+  .container-fluid form hr {
+    margin-left: 0;
+    border-color: rgba(255, 255, 255, 0.5); }
 
 @media (min-width: 768px) {
   .scroll-container {

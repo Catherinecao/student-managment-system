@@ -3,8 +3,17 @@
 		@include container-padding-setting(80px);	
 	}
 
-	h4{
+	.col-md-8, .col-md-4{
 		@include container-padding-setting(20px);
+
+		hr{
+			margin-left: 0;
+			border-color:transparentize($white, 0.5);
+		}
+
+		a{
+			color:$accent-color;
+		}
 	}
 
     section{
@@ -12,12 +21,38 @@
 	}
 
 	.form-group{
-		@include container-padding-setting(0);
+		// @include container-padding-setting(0);
+		.col-md-offset-2{
+			margin-left: 0;
+			position: relative;
+
+			.checkbox{
+				input{
+					position:relative;
+					margin-left: 10px;
+				}
+
+				label{
+					padding-left:10px;
+				}
+			}
+		}
 
 		.col-md-10{
 			padding-left:0;
 			padding-right:0;
+
+			.btn-default{
+				text-decoration: none;
+				border:0;
+				background-color:$white;
+				color: $orange;
+				font-size: 1.2em;
+				box-shadow:$dropshadow;
+				&:hover{
+					box-shadow:$hover-shadow;
+				}
+			}
 		}
 	}
-
 }

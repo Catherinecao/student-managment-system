@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student - My ASP.NET Application</title>
-    <meta name="description" content="My ASP.NET Application" />
-    <link href="/Content/Site.less" rel="stylesheet"/>
-<link href="css/bootstrap.less" rel="stylesheet"/>
-<link href="stylesheets/main.css" rel="stylesheet"/>
-
-    <script src="/js/modernizr-2.8.3.js"></script>
-
-
+  <title>Kingston Student Management System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+   <script src="js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
-<body>
-
-
+  <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -34,21 +32,16 @@
                     <li><a href="/Marketing">Marketing</a></li>
                     <li><a href="/Admin">Admin</a></li>
                 </ul>
-                <form action="/Account/LogOff" class="navbar-right" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="I883gJHE2ldYO3op3dv7qxolMq5Cx1EIg5vd_ppngSNbFfPJHhCgTCzpG48ct3J2AVtCFAewVE-5SubT5TFdlWaRnyWGI5Yh0JfcJs6MUwmLKa3bYKP8iFvP9ahVnvPruwwUAZy7xFLS8DWLKkpQOw2" />    <ul class="nav navbar-nav navbar-right">
-        <li>
-            <a href="/Account/Manage" title="Manage">Hello Fan!</a>
-        </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
-    </ul>
-</form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/Account/Register" id="registerLink">Register</a></li>
+                    <li><a href="/Account/Login" id="loginLink">Log in</a></li>
+                </ul>
             </div>
         </div>
     </div>
-    <main class="container-fluid">
-        
 
-
-<div class="content col-md-9">
+<main class="container-fluid">
+    <div class="content col-md-9">
     <div class="scroll-container">
         <div id="contentArea" class="scroll-content">
             <h2>Student</h2>
@@ -187,31 +180,9 @@
     </div>
 
 </div><!--/.sidebar -->
-
-
-        <hr />
-        <footer>
-            <p>&copy; 2015 - Kingston</p>
-        </footer>
-    </main>
-    
-    <script src="/Scripts/jquery-2.1.3.js"></script>
-<script src="/Scripts/jquery.unobtrusive-ajax.js"></script>
-
-    <script src="/Scripts/bootstrap.js"></script>
-<script src="/Scripts/respond.js"></script>
-
-    <script src="/Scripts/jquery.validate.js"></script>
-<script src="/Scripts/jquery.validate.unobtrusive.js"></script>
-
-    
-
-<!-- Visual Studio Browser Link -->
-<script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Internet Explorer","requestId":"fb9cd661d5c843d0a470a4dbda8e9f20"}
-</script>
-<script type="text/javascript" src="http://localhost:1715/d2d7bac26f6c4276a60ec3377d724495/browserLink" async="async"></script>
-<!-- End Browser Link -->
-
-</body>
+</main>
+<footer>
+    <p>&copy; 2015 - Kingston</p>
+</footer>
+  </body>
 </html>
