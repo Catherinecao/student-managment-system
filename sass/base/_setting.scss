@@ -105,10 +105,18 @@ hr{
 		width: percentage(3/20);
 		vertical-align:middle;
 		float: left;
+		text-align: left;
 	}
 
 	.form-control{
-		width: percentage(7/20);
+		width: percentage(17/20);
+		float: right;
+		vertical-align:middle;
+		text-align: left;
+	}
+
+	select, option{
+		width: percentage(17/20);
 		float: right;
 		vertical-align:middle;
 		text-align: left;
@@ -138,6 +146,13 @@ hr{
 		padding:5px;
 		width: 30%;
 		vertical-align:middle;
+		text-align: left;
+	}
+
+	select, option{
+		width: 70%;
+		float: right;
+		text-align: left;
 	}
 	
 	.form-control,
@@ -210,5 +225,12 @@ a:hover{
 
 select{
 	border-radius:1px;
+	line-height: 1.42857;height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
 	line-height: 1.42857;
+	color: #555;
+	background-color: #FFF;
+	background-image: none;
+	border: 1px solid #CCC;
 }
