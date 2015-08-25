@@ -459,17 +459,18 @@ hr {
     margin-top: 30px; }
   .col-6 .control-label {
     padding: 5px;
-    width: 30%;
+    width: 25%;
     vertical-align: middle;
-    text-align: left; }
+    text-align: left;
+    float: left; }
   .col-6 select, .col-6 option {
-    width: 70%;
-    float: right;
+    width: 75%;
+    float: left;
     text-align: left; }
   .col-6 .form-control,
   .col-6 .checkbox-container {
-    width: 70%;
-    float: right;
+    width: 75%;
+    float: left;
     text-align: left; }
     .col-6 .form-control .form-control-others,
     .col-6 .checkbox-container .form-control-others {

@@ -144,23 +144,26 @@ hr{
 
 	.control-label{
 		padding:5px;
-		width: 30%;
+		width: percentage(3/12);
 		vertical-align:middle;
 		text-align: left;
+		float: left;
 	}
 
 	select, option{
-		width: 70%;
-		float: right;
+		width: percentage(9/12);
+		float: left;
 		text-align: left;
+		// padding-right:20px;
 	}
 	
 	.form-control,
 	.checkbox-container
 	{
-		width: 70%;
-		float: right;
+		width: percentage(9/12);
+		float: left;
 		text-align: left;
+		// padding-right:20px;
 
 		.form-control-others{
 			position: relative;
