@@ -21,11 +21,21 @@
 	background-color:$orange;
 }
 
-.btn-search:hover,.btn-search:active,
-.btn-success:hover,.btn-success:active{
+.btn-search:hover,.btn-search:active, .btn-search:visited,
+.btn-success:hover,.btn-success:active, .btn-success:visited{
 	box-shadow:$dropshadow-inset;
-	background-color:$dark-orange;
+	background-color:$accent-color;
 	color:$white;
+	transition:background-color 0.15s ease-in-out 0s,color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+}
+
+.btn-success-active{
+	box-shadow:$dropshadow-inset;
+	background-color:$accent-color;
+	color:$white;
+	transition:background-color 0.15s ease-in-out 0s,color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
 }
 
 .navbar-inverse .navbar-brand{

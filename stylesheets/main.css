@@ -358,19 +358,41 @@ th {
     .container {
       padding: 0 3.09278%; } }
 
+input {
+  background-color: white; }
+
 .container-fluid {
   padding: 0;
   background-color: #FF9800;
   position: relative; }
+
+.navButton {
+  background-color: rgba(128, 128, 128, 0.05);
+  border: 0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) inset;
+  color: #676767; }
 
 .btn {
   border-radius: 0;
   padding: 10px auto;
   text-align: center; }
 
+.btn-default {
+  border-color: #FF9800;
+  background-color: white;
+  color: #FF9800;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+  .btn-default:hover {
+    background-color: #FF9800;
+    color: white;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    border-color: #FF9800;
+    transition: background-color 0.15s ease-in-out 0s,color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
+
 .btn-success {
   background-color: #FF9800;
-  border: 0; }
+  border: 0;
+  color: white; }
 
 .btn-search {
   background-color: #FF9800;
@@ -426,28 +448,33 @@ hr {
   vertical-align: middle;
   margin-bottom: 20px;
   display: inline-block;
-  text-align: left;
-  padding-right: 20px; }
+  text-align: left; }
   .col-12 .control-label {
     padding: 5px;
-    width: 15%;
+    width: 25%;
     vertical-align: middle;
     float: left;
     text-align: left; }
   .col-12 .form-control {
-    width: 85%;
+    width: 75%;
     float: right;
     vertical-align: middle;
     text-align: left; }
   .col-12 select, .col-12 option {
-    width: 85%;
+    width: 75%;
     float: right;
     vertical-align: middle;
     text-align: left; }
   .col-12 .btn {
-    margin-top: 30px; }
+    margin-top: 20px; }
+  .col-12 .loaded-file {
+    padding: 5px;
+    width: 50%;
+    text-decoration: underline;
+    color: #FF9800; }
 
 .col-6 {
+  display: inline-block;
   width: 100%;
   float: left;
   vertical-align: middle;
@@ -459,17 +486,19 @@ hr {
     margin-top: 30px; }
   .col-6 .control-label {
     padding: 5px;
-    width: 25%;
+    padding-left: 10px;
+    width: 50%;
     vertical-align: middle;
     text-align: left;
-    float: left; }
+    float: left;
+    display: block; }
   .col-6 select, .col-6 option {
-    width: 75%;
+    width: 50%;
     float: left;
     text-align: left; }
   .col-6 .form-control,
   .col-6 .checkbox-container {
-    width: 75%;
+    width: 50%;
     float: left;
     text-align: left; }
     .col-6 .form-control .form-control-others,
@@ -513,6 +542,11 @@ a:hover {
   margin-left: 0;
   margin-right: 0; }
 
+.label {
+  color: #724400;
+  margin-bottom: 1em;
+  font-size: 1em; }
+
 select {
   border-radius: 1px;
   line-height: 1.42857;
@@ -545,11 +579,18 @@ select {
 .navbar-inverse .navbar-toggle {
   background-color: #FF9800; }
 
-.btn-search:hover, .btn-search:active,
-.btn-success:hover, .btn-success:active {
+.btn-search:hover, .btn-search:active, .btn-search:visited,
+.btn-success:hover, .btn-success:active, .btn-success:visited {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) inset;
-  background-color: #F57C00;
-  color: white; }
+  background-color: #9e15b5;
+  color: white;
+  transition: background-color 0.15s ease-in-out 0s,color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
+
+.btn-success-active {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) inset;
+  background-color: #9e15b5;
+  color: white;
+  transition: background-color 0.15s ease-in-out 0s,color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; }
 
 .navbar-inverse .navbar-brand {
   font-size: 22px;
@@ -685,6 +726,10 @@ select {
     .container-fluid .form-group .col-md-10 .btn-default:hover {
       box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3); }
 
+.scroll-container li {
+  margin-bottom: 5px; }
+.scroll-container p {
+  text-align: left; }
 @media (min-width: 768px) {
   .scroll-container {
     padding: 0; } }
@@ -735,6 +780,10 @@ select {
     .scroll-content {
       margin-left: 2.5641%;
       margin-right: 2.5641%; } }
+  .scroll-content li {
+    margin-bottom: 5px; }
+  .scroll-content p {
+    text-align: left; }
 
 .application p,
 .instructions p {
@@ -761,3 +810,33 @@ select {
 
 .form-container {
   margin-top: 50px; }
+
+.border {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.1); }
+
+.top {
+  margin-top: 30px; }
+
+.bottom {
+  margin-bottom: 30px; }
+
+.col-xs-10 {
+  padding-left: 0;
+  padding-right: 0; }
+  .col-xs-10 .col-xs-12 {
+    padding-left: 0;
+    padding-top: 5px; }
+
+.col-xs-12 {
+  padding-right: 0; }
+
+.padding-top {
+  padding-top: 5px; }
+
+.padding {
+  padding-top: 15px; }
+
+ol {
+  text-align: left; }
+  ol li {
+    padding-top: 7px; }

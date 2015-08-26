@@ -7,7 +7,10 @@
 	@media (min-width:992px){
 		padding:0 percentage(30/970);
 	}
+}
 
+input{
+	background-color:$white;
 }
 
 .container-fluid{
@@ -16,6 +19,12 @@
 	position:relative;	
 }
 
+.navButton{
+	background-color:$light-gray;
+	border:0;
+	box-shadow:$dropshadow-inset;
+	color:$dark-gray;
+}
 
 .btn{
 	border-radius:0;
@@ -23,9 +32,25 @@
 	text-align: center;
 }
 
+
+.btn-default{
+	border-color:$orange;
+	background-color:$white;
+	color:$orange;
+	box-shadow:$text-shadow;
+	&:hover{
+		background-color:$orange;
+		color:$white;
+		box-shadow:$hover-shadow;
+		border-color:$orange;
+		transition:background-color 0.15s ease-in-out 0s,color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	}
+}
+
 .btn-success{
 	background-color:$orange;
 	border:0;
+	color:$white;
 }
 
 .btn-search{
@@ -98,38 +123,46 @@ hr{
 	margin-bottom:20px;
 	display:inline-block;
 	text-align: left;
-	padding-right:20px;
+	
 
 	.control-label{
 		padding:5px;
-		width: percentage(3/20);
+		width: percentage(3/12);
 		vertical-align:middle;
 		float: left;
 		text-align: left;
 	}
 
 	.form-control{
-		width: percentage(17/20);
+		width: percentage(9/12);
 		float: right;
 		vertical-align:middle;
 		text-align: left;
 	}
 
 	select, option{
-		width: percentage(17/20);
+		width: percentage(9/12);
 		float: right;
 		vertical-align:middle;
 		text-align: left;
 	}
 
 	.btn{
-		margin-top: 30px;
+		margin-top: 20px;
+	}
+
+	.loaded-file{
+		padding:5px;
+		width: percentage(6/12);
+		text-decoration: underline;
+		color: $orange;
 	}
 
 
 }
 
 .col-6{
+	display:inline-block;
 	width:100%;
 	float: left;
 	vertical-align:middle;
@@ -138,20 +171,23 @@ hr{
 	text-align: left;
 	height:50px;
 
+
 	.btn{
 		margin-top: 30px;
 	}
 
 	.control-label{
 		padding:5px;
-		width: percentage(3/12);
+		padding-left:10px;
+		width: percentage(6/12);
 		vertical-align:middle;
 		text-align: left;
 		float: left;
+		display: block;
 	}
 
 	select, option{
-		width: percentage(9/12);
+		width: percentage(6/12);
 		float: left;
 		text-align: left;
 		// padding-right:20px;
@@ -160,7 +196,7 @@ hr{
 	.form-control,
 	.checkbox-container
 	{
-		width: percentage(9/12);
+		width: percentage(6/12);
 		float: left;
 		text-align: left;
 		// padding-right:20px;
@@ -225,6 +261,11 @@ a:hover{
 	}
 }
 
+.label{
+	color:$darker-orange;
+	margin-bottom:1em;
+	font-size:1em;
+}
 
 select{
 	border-radius:1px;
@@ -237,3 +278,5 @@ select{
 	background-image: none;
 	border: 1px solid #CCC;
 }
+
+

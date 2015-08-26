@@ -1,0 +1,38 @@
+.border{
+	border-bottom:2px solid $lightless-gray;
+
+}
+.top{
+	margin-top:30px;
+}
+.bottom{
+	margin-bottom:30px;
+}
+.col-xs-10{
+	padding-left:0;
+	padding-right:0;
+	.col-xs-12{
+		padding-left:0;
+		padding-top:5px;
+	}	
+}
+
+.col-xs-12{
+	padding-right:0;
+}
+
+.padding-top{
+	padding-top:5px;
+}
+
+.padding{
+	padding-top:15px;
+}
+
+ol{
+	text-align:left;
+
+	li{
+		padding-top:7px;
+	}
+}

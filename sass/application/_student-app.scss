@@ -1,5 +1,11 @@
 .scroll-container{
-	
+
+	li{
+		margin-bottom:5px;
+	}
+	p{
+		text-align: left;
+	}
 
 	@media (min-width: 768px){
 		padding:0;
@@ -58,6 +64,14 @@
 	@media (min-width: 1200px){
 		margin-left:percentage(30/1170);
 		margin-right:percentage(30/1170);
+	}
+
+	li{
+		margin-bottom:5px;
+		
+	}
+	p{
+		text-align: left;
 	}
 }
 
